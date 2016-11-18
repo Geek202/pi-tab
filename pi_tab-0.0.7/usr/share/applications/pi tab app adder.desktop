@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=xfwm4
+Type=Application
+Name=Pi Tab App Install
+Exec=pi_tab_add_app
+Terminal=false

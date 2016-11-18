@@ -1,0 +1,19 @@
+###############################
+#                             #
+# This is open souce software #
+#                             #
+###############################
+
+instructions to install:
+	Extract the zip to your desktop
+	open up pcmanfm(the file browser)
+	double click Pi Tab Installer
+instructions to update:
+	On the menu go to other
+	Choose Pi Tab Updater
+	
+	or
+	
+	Open the terminal
+	Type "pi_tab_update"
+

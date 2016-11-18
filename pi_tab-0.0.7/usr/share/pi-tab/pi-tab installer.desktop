@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Pi Tab Installer
+Icon=system-software-install
+Exec=/home/pi/Documents/pi-tab/install.sh
+Terminal=true

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Pi Tab Dist Zipper
+Icon=system-software-install
+Exec=/home/pi/Desktop/pi-tab/pi_tab_dist.sh
+Terminal=true

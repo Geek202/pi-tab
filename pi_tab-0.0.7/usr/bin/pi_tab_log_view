@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+
+import os,getpass
+from tkinter import *
+
+os.system('ls ~/.pi-tab/logs > ~/.pi-tab/logs.txt')
+
+with open('/home/'+getpass.getuser()+'/.pi-tab/logs.txt', 'r') as logfile:
+	logrecent = None
+	for log in logfile.readlines():
+		logrecent = log
+if logrecent == None: os._exit(0)
+log = open('/home/'+getpass.getuser()+'/.pi-tab/logs/' + logrecent[:30], 'r')
+
+window = Tk()
+window.title('View Log - ~/.pi-tab/logs/' + logrecent[:30])
+label = Label(window, text=log.read(), justify = LEFT)
+label.pack()
+
+window.mainloop()

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Pi Tab
+Exec=pi_tab
+StartupNotify=False
+Terminal=True
+Icon=/usr/share/pi-tab/icon.svg

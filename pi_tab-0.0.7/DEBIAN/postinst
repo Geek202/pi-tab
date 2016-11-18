@@ -1,0 +1,4 @@
+cd /usr/share/pi-tab
+python3 /usr/share/pi-tab/setup.py install
+cd /home/pi
+#pi_tab --first

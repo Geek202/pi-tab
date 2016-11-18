@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import piTab,os
+from optparse import OptionParser
+pidfile = open('.pitab.pid','w')
+pidfile.write(str(os.getpid()))
+pharser = OptionParser()
+pharser.add_option('-u', '--update', help="Update the software",dest="update",action="store_true")
+pharser.add_option('-a', '--addApp',help='Add the specified app',dest="addApp",action="store_true")
+pharser.add_option('-g','--addGame',help="Add the specified game",dest="addGame",action="store_true")
+opts,args = pharser.parse_args()
+piTab.__main__(opts)
