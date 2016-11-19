@@ -1,3 +1,0 @@
-#!/bin/bash
-cat ~/.pitab.pid | kill -
-pi_tab
