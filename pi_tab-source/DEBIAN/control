@@ -1,0 +1,9 @@
+Package: PiTab
+Version: 0.0.9
+Architecture: armhf
+Maintainer: Tom Bryan <theedbryanfamily@gmail.com>
+Depends: python, python-gtk2, python3
+Installed-Size: 7700
+Homepage: http://example.com
+Description: Pi Tab GUI
+ This package will install Pi Tab and will change the desktop background to a custom design.

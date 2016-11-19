@@ -1,0 +1,7 @@
+[Desktop Entry]
+Icon=system-software-update
+Type=Application
+Name=Pi Tab Updater
+Exec=pi_tab_update
+Terminal=true
+

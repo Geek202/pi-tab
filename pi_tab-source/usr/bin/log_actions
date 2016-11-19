@@ -1,0 +1,25 @@
+#!/usr/bin/python
+import subprocess
+import time
+import logging
+import getpass
+from datetime import datetime
+
+logging.basicConfig(filename="/home/"+getpass.getuser()+"/.session_log-" + datetime.now().isoformat() + ".log",
+                    level=logging.INFO,format="%(asctime)s : %(message)s")
+
+def getProcessData():
+    ps = subprocess.Popen(['ps', 'aux'], stdout=subprocess.PIPE).communicate()[0]
+    processes = ps.split('\n')
+    # this specifies the number of splits, so the splitted lines
+    # will have (nfields+1) elements
+    nfields = len(processes[0].split()) - 1
+    retval = []
+    for row in processes[1:]:
+        retval.append(row.split(None, nfields))
+    return retval
+
+while True:
+	logging.info(str(getProcessData()))
+	print 'Done'
+	time.sleep(30)
