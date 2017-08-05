@@ -1,2 +1,2 @@
 # pi-tab
-Simple GUI tool for [raspberry pi](https://www.raspberrypi.org)
+Simple GUI tool for [Raspberry Pi](https://www.raspberrypi.org)
